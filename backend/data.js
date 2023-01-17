@@ -1,0 +1,132 @@
+import bcrypt from 'bcryptjs';
+
+const data = {
+
+    users: [
+    {
+        name: 'Facundo',
+        email: 'admin@ejemplo.com',
+        password: bcrypt.hashSync('123456'),
+        isAdmin: true,
+    },
+    {
+        name: 'Devplace',
+        email: 'user@ejemplo.com',
+        password: bcrypt.hashSync('123456'),
+        isAdmin: false,
+
+    },
+       
+    ],
+
+    products: [
+            {
+                // _id: '1',
+                name: 'Zapatillas Nike Urbanas',
+                slug: 'nike-shoes1',
+                category:'Shoes',
+                image:'/images/nike01.jpg', // 679px x 829px
+                price: 16000,
+                countInStock: 15,
+                brand: 'Nike',
+                rating: 4.5,
+                numReviews: 10,
+                description:'Zapatillas urbanas',
+            },
+            {
+                // _id: '2',
+                name: 'Zapatillas Nike Urbanas ',
+                slug: 'adidas-shoes2',
+                category:'Shoes',
+                image:'/images/nike02.jpg',
+                price: 17000,
+                countInStock: 20,
+                brand: 'Nike',
+                rating: 4.5,
+                numReviews: 10,
+                description:'Zapatillas urbanas',
+            },
+            {
+                // _id: '3',
+                name: 'Nike Shoes',
+                slug: 'nike-shoes3',
+                category:'Shoes',
+                image:'/images/nike03.jpg',
+                price: 12000,
+                countInStock: 15,
+                brand: 'Nike',
+                rating: 4.5,
+                numReviews: 14,
+                description:'Zapatillas de Bascket',
+            },
+            {
+                // _id: '4',
+                name: 'Zapatillas Nike trainning',
+                slug: 'nike-shoes4',
+                category:'Shoes',
+                image:'/images/nike04.jpg',
+                price: 13000,
+                countInStock: 10,
+                brand: 'Nike',
+                rating: 4.5,
+                numReviews: 10,
+                description:'Zapatillas Nike',
+            },
+            {
+                // _id: '5',
+                name: 'Zapatillas Adidas Urban',
+                slug: 'adidas-shoes5',
+                category:'Shoes',
+                image:'/images/adidas05.jpg',
+                price: 13000,
+                countInStock: 10,
+                brand: 'Adidas',
+                rating: 4.5,
+                numReviews: 10,
+                description:'Zapatillas Urbanas',
+            },
+            {
+                // _id: '6',
+                name: 'Zapatillas Adidas Urbanas',
+                slug: 'adidas-shoes6',
+                category:'Shoes',
+                image:'/images/adidas06.jpg',
+                price: 13000,
+                countInStock: 10,
+                brand: 'Adidas',
+                rating: 4.5,
+                numReviews: 10,
+                description:'Zapatillas urbanas',
+            },
+            {
+                // _id: '7',
+                name: 'Zapatillas Adidas deportivas',
+                slug: 'adidas-shoes7',
+                category:'Shoes',
+                image:'/images/adidas07.jpg',
+                price: 13000,
+                countInStock: 10,
+                brand: 'Adidas',
+                rating: 4.5,
+                numReviews: 10,
+                description:'Zapatillas deportivas',
+            },
+            {
+                // _id: '8',
+                name: 'Zapatillas Adidas deportivas',
+                slug: 'adidas-shoes8',
+                category:'Shoes',
+                image:'/images/adidas08.jpg',
+                price: 13000,
+                countInStock: 10,
+                brand: 'Adidas',
+                rating: 4.5,
+                numReviews: 10,
+                description:'Zapatillas deportivas',
+            },
+
+    ],
+
+}
+
+export default data;
